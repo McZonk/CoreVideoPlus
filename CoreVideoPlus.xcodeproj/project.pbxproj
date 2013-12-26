@@ -10,7 +10,7 @@
 		50BC8121186C44E600F0CD4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC8120186C44E600F0CD4D /* Foundation.framework */; };
 		50BC8126186C44E600F0CD4D /* CoreVideoPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */; };
 		50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */; };
-		50BC814D186C455300F0CD4D /* CVOpenGLESTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8149186C455300F0CD4D /* CVOpenGLESTextureCache.m */; };
+		50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
 		50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m */; };
 /* End PBXBuildFile section */
@@ -37,8 +37,8 @@
 		50BC8131186C44E600F0CD4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTexture.h; sourceTree = "<group>"; };
 		50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTexture.m; sourceTree = "<group>"; };
-		50BC8148186C455300F0CD4D /* CVOpenGLESTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVOpenGLESTextureCache.h; sourceTree = "<group>"; };
-		50BC8149186C455300F0CD4D /* CVOpenGLESTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVOpenGLESTextureCache.m; sourceTree = "<group>"; };
+		50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTextureCache.h; sourceTree = "<group>"; };
+		50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTextureCache.m; sourceTree = "<group>"; };
 		50BC814A186C455300F0CD4D /* NSError+CVPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CVPError.h"; sourceTree = "<group>"; };
 		50BC814B186C455300F0CD4D /* NSError+CVPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CVPError.m"; sourceTree = "<group>"; };
 		50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPPixelformat+CVPPixelformat.h"; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 				50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */,
 				50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */,
 				50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */,
-				50BC8148186C455300F0CD4D /* CVOpenGLESTextureCache.h */,
-				50BC8149186C455300F0CD4D /* CVOpenGLESTextureCache.m */,
+				50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */,
+				50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */,
 				50BC814A186C455300F0CD4D /* NSError+CVPError.h */,
 				50BC814B186C455300F0CD4D /* NSError+CVPError.m */,
 				50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */,
@@ -152,7 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BC814D186C455300F0CD4D /* CVOpenGLESTextureCache.m in Sources */,
+				50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */,
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
 				50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */,
 				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m in Sources */,
@@ -198,6 +198,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					..,
+					.,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -235,6 +236,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					..,
+					.,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;

@@ -8,7 +8,7 @@
 @class CVPOpenGLESTexture;
 
 
-@interface CVOpenGLESTextureCache : NSObject
+@interface CVPOpenGLESTextureCache : NSObject
 
 + (instancetype)textureCacheWithContext:(EAGLContext *)context error:(NSError **)error;
 

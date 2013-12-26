@@ -1,4 +1,4 @@
-#import "CVOpenGLESTextureCache.h"
+#import "CVPOpenGLESTextureCache.h"
 
 #import <CoreVideo/CoreVideo.h>
 
@@ -7,7 +7,7 @@
 #import "CVPOpenGLESTexture.h"
 
 
-@interface CVOpenGLESTextureCache ()
+@interface CVPOpenGLESTextureCache ()
 {
 @private
 	CVOpenGLESTextureCacheRef textureCache;
@@ -16,7 +16,7 @@
 @end
 
 
-@implementation CVOpenGLESTextureCache
+@implementation CVPOpenGLESTextureCache
 
 + (instancetype)textureCacheWithContext:(EAGLContext *)context error:(NSError **)error
 {
@@ -26,10 +26,13 @@
 - (instancetype)initWithContext:(EAGLContext *)context error:(NSError **)error
 {
 	self = [super init];
-	if(self != nil) {
+	if(self != nil)
+	{
 		CVReturn err = CVOpenGLESTextureCacheCreate(kCFAllocatorDefault, NULL, context, NULL, &textureCache);
-		if(err != kCVReturnSuccess) {
-			if(error != nil) {
+		if(err != kCVReturnSuccess)
+		{
+			if(error != nil)
+			{
 				*error = [NSError errorWithDomain:CVPErrorDomain code:err userInfo:nil];
 			}
 			

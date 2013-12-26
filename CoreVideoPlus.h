@@ -1,5 +1,5 @@
 
-#import <CoreVideoPlus/CLPOpenGLESTexture.h>
-#import <CoreVideoPlus/CLPOpenGLESTextureCache.h>
+#import <CoreVideoPlus/CVPOpenGLESTexture.h>
+#import <CoreVideoPlus/CVPOpenGLESTextureCache.h>
 
 #import <CoreVideoPlus/NSError+CVPError.h>

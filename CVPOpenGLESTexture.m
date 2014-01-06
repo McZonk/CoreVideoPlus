@@ -19,7 +19,7 @@
 
 - (instancetype)initWithCVOpenGLESTexture:(CVOpenGLESTextureRef)texture_
 {
-	if(texture == NULL)
+	if(texture_ == NULL)
 	{
 		return nil;
 	}

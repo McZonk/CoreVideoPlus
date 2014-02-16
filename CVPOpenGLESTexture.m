@@ -58,8 +58,13 @@
 
 - (void)bindToUnit:(GLenum)unit
 {
-	glActiveTexture(unit);
+	glpActiveTexture(unit);
 	[self bind];
+}
+
+- (void)unbind
+{
+	glBindTexture(self.GLTarget, 0);
 }
 
 - (NSString*)description {

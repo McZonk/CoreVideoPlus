@@ -130,7 +130,7 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = McZonk;
 			};
-			buildConfigurationList = 50BC8118186C44E600F0CD4D /* Build configuration list for PBXProject "CoreVideoPlus" */;
+			buildConfigurationList = 50BC8118186C44E600F0CD4D /* Build configuration list for PBXProject "CoreVideoPlus-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -269,7 +269,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50BC8118186C44E600F0CD4D /* Build configuration list for PBXProject "CoreVideoPlus" */ = {
+		50BC8118186C44E600F0CD4D /* Build configuration list for PBXProject "CoreVideoPlus-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50BC813E186C44E600F0CD4D /* Debug */,

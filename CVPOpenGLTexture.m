@@ -1,23 +1,25 @@
-#import "CVPOpenGLESTexture.h"
+#import "CVPOpenGLTexture.h"
+
+#import <OpenGL/gl3.h>
 
 
-@interface CVPOpenGLESTexture ()
+@interface CVPOpenGLTexture ()
 {
 @private
-	CVOpenGLESTextureRef texture;
+	CVOpenGLTextureRef texture;
 }
 
 @end
 
 
-@implementation CVPOpenGLESTexture
+@implementation CVPOpenGLTexture
 
-+ (instancetype)textureWithCVOpenGLESTexture:(CVOpenGLESTextureRef)texture
++ (instancetype)textureWithCVOpenGLTexture:(CVOpenGLTextureRef)texture
 {
-	return [[self alloc] initWithCVOpenGLESTexture:texture];
+	return [[self alloc] initWithCVOpenGLTexture:texture];
 }
 
-- (instancetype)initWithCVOpenGLESTexture:(CVOpenGLESTextureRef)texture_
+- (instancetype)initWithCVOpenGLTexture:(CVOpenGLTextureRef)texture_
 {
 	if(texture_ == NULL)
 	{
@@ -44,12 +46,12 @@
 
 - (GLenum)GLTarget
 {
-	return CVOpenGLESTextureGetTarget(texture);
+	return CVOpenGLTextureGetTarget(texture);
 }
 
 - (GLuint)GLTexture
 {
-	return CVOpenGLESTextureGetName(texture);
+	return CVOpenGLTextureGetName(texture);
 }
 
 - (void)bind

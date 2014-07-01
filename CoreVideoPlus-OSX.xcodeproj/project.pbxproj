@@ -11,6 +11,8 @@
 		50BC8126186C44E600F0CD4D /* CoreVideoPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
 		50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */; };
+		50D198FA1963532C00B40610 /* CVPOpenGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D198F91963532C00B40610 /* CVPOpenGLTexture.m */; };
+		50D198FD196354CC00B40610 /* CVPOpenGLTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50D198FC196354CC00B40610 /* CVPOpenGLTextureCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,14 +35,14 @@
 		50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreVideoPlus.h; sourceTree = "<group>"; };
 		50BC812E186C44E600F0CD4D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		50BC8131186C44E600F0CD4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTexture.h; sourceTree = "<group>"; };
-		50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTexture.m; sourceTree = "<group>"; };
-		50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTextureCache.h; sourceTree = "<group>"; };
-		50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTextureCache.m; sourceTree = "<group>"; };
 		50BC814A186C455300F0CD4D /* NSError+CVPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CVPError.h"; sourceTree = "<group>"; };
 		50BC814B186C455300F0CD4D /* NSError+CVPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CVPError.m"; sourceTree = "<group>"; };
 		50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPPixelformat+CVPPixelformat.h"; sourceTree = "<group>"; };
 		50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "GLPPixelformat+CVPPixelformat.c"; sourceTree = "<group>"; };
+		50D198F81963532C00B40610 /* CVPOpenGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLTexture.h; sourceTree = "<group>"; };
+		50D198F91963532C00B40610 /* CVPOpenGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLTexture.m; sourceTree = "<group>"; };
+		50D198FB196354CC00B40610 /* CVPOpenGLTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLTextureCache.h; sourceTree = "<group>"; };
+		50D198FC196354CC00B40610 /* CVPOpenGLTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLTextureCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +89,14 @@
 			children = (
 				50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */,
 				50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */,
-				50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */,
-				50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */,
-				50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */,
-				50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */,
 				50BC814A186C455300F0CD4D /* NSError+CVPError.h */,
 				50BC814B186C455300F0CD4D /* NSError+CVPError.m */,
 				50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */,
 				50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */,
+				50D198F81963532C00B40610 /* CVPOpenGLTexture.h */,
+				50D198F91963532C00B40610 /* CVPOpenGLTexture.m */,
+				50D198FB196354CC00B40610 /* CVPOpenGLTextureCache.h */,
+				50D198FC196354CC00B40610 /* CVPOpenGLTextureCache.m */,
 			);
 			name = CoreVideoPlus;
 			sourceTree = "<group>";
@@ -151,7 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
+				50D198FD196354CC00B40610 /* CVPOpenGLTextureCache.m in Sources */,
 				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */,
+				50D198FA1963532C00B40610 /* CVPOpenGLTexture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

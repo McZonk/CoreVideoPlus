@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import <CoreMedia/CoreMedia.h>
+#import <CoreVideo/CoreVideo.h>
 
 #import <OpenGLPlus/GLPTexture.h>
 

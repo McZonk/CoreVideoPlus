@@ -1,12 +1,12 @@
 
 #include <TargetConditionals.h>
 
+#include <CoreVideoPlus/GLPPixelformat+CVPPixelformat.h>
 
-#include "GLPPixelformat+CVPPixelformat.h"
 
 #ifdef __OBJC__
 
-#import "NSError+CVPError.h"
+#import <CoreVideoPlus/NSError+CVPError.h>
 
 #endif
 
@@ -15,6 +15,9 @@
 
 #ifdef __OBJC__
 
+#import <CoreVideoPlus/CVPOpenGLTexture.h>
+#import <CoreVideoPlus/CVPOpenGLTextureCache.h>
+
 #endif  /* __OBJC__ */
 
 #elif defined(TARGET_OS_IPHONE) && (TARGET_OS_IPHONE > 0)
@@ -22,8 +25,8 @@
 
 #ifdef __OBJC__
 
-#import "CVPOpenGLESTexture.h"
-#import "CVPOpenGLESTextureCache.h"
+#import <CoreVideoPlus/CVPOpenGLESTexture.h>
+#import <CoreVideoPlus/CVPOpenGLESTextureCache.h>
 
 #endif /* __OBJC__ */
 

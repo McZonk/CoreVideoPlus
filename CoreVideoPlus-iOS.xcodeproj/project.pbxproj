@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5022875E19B3B04B00B36274 /* CVPMetalTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5022875B19B3B04B00B36274 /* CVPMetalTextureCache.m */; };
+		5022875F19B3B04B00B36274 /* CVPPixelBuffer+Metal.m in Sources */ = {isa = PBXBuildFile; fileRef = 5022875D19B3B04B00B36274 /* CVPPixelBuffer+Metal.m */; };
 		50BC8121186C44E600F0CD4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC8120186C44E600F0CD4D /* Foundation.framework */; };
 		50BC8126186C44E600F0CD4D /* CoreVideoPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */; };
-		50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */; };
-		50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
-		50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,20 +28,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5022875A19B3B04B00B36274 /* CVPMetalTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPMetalTextureCache.h; sourceTree = "<group>"; };
+		5022875B19B3B04B00B36274 /* CVPMetalTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPMetalTextureCache.m; sourceTree = "<group>"; };
+		5022875C19B3B04B00B36274 /* CVPPixelBuffer+Metal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CVPPixelBuffer+Metal.h"; sourceTree = "<group>"; };
+		5022875D19B3B04B00B36274 /* CVPPixelBuffer+Metal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CVPPixelBuffer+Metal.m"; sourceTree = "<group>"; };
 		50BC811D186C44E600F0CD4D /* libCoreVideoPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreVideoPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BC8120186C44E600F0CD4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreVideoPlus-Prefix.pch"; sourceTree = "<group>"; };
 		50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreVideoPlus.h; sourceTree = "<group>"; };
 		50BC812E186C44E600F0CD4D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		50BC8131186C44E600F0CD4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTexture.h; sourceTree = "<group>"; };
-		50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTexture.m; sourceTree = "<group>"; };
-		50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLESTextureCache.h; sourceTree = "<group>"; };
-		50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLESTextureCache.m; sourceTree = "<group>"; };
 		50BC814A186C455300F0CD4D /* NSError+CVPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CVPError.h"; sourceTree = "<group>"; };
 		50BC814B186C455300F0CD4D /* NSError+CVPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CVPError.m"; sourceTree = "<group>"; };
-		50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPPixelformat+CVPPixelformat.h"; sourceTree = "<group>"; };
-		50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "GLPPixelformat+CVPPixelformat.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5022876019B3B04E00B36274 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				5022875A19B3B04B00B36274 /* CVPMetalTextureCache.h */,
+				5022875B19B3B04B00B36274 /* CVPMetalTextureCache.m */,
+				5022875C19B3B04B00B36274 /* CVPPixelBuffer+Metal.h */,
+				5022875D19B3B04B00B36274 /* CVPPixelBuffer+Metal.m */,
+			);
+			name = Metal;
+			sourceTree = "<group>";
+		};
 		50BC8114186C44E600F0CD4D = {
 			isa = PBXGroup;
 			children = (
@@ -88,15 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */,
-				50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */,
-				50BC8146186C455300F0CD4D /* CVPOpenGLESTexture.h */,
-				50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */,
-				50BC8148186C455300F0CD4D /* CVPOpenGLESTextureCache.h */,
-				50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */,
 				50BC814A186C455300F0CD4D /* NSError+CVPError.h */,
 				50BC814B186C455300F0CD4D /* NSError+CVPError.m */,
-				50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */,
-				50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */,
+				5022876019B3B04E00B36274 /* Metal */,
 			);
 			name = CoreVideoPlus;
 			sourceTree = "<group>";
@@ -152,10 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */,
+				5022875F19B3B04B00B36274 /* CVPPixelBuffer+Metal.m in Sources */,
+				5022875E19B3B04B00B36274 /* CVPMetalTextureCache.m in Sources */,
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
-				50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */,
-				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +196,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					..,
 					.,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -233,7 +232,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					..,
 					.,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -247,7 +245,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/CoreVideoPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreVideoPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -259,7 +256,6 @@
 			buildSettings = {
 				DSTROOT = /tmp/CoreVideoPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoreVideoPlus-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

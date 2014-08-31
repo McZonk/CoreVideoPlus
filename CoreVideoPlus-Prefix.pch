@@ -1,7 +1,0 @@
-#include <TargetConditionals.h>
-
-#import <CoreVideo/CoreVideo.h>
-
-#ifdef __OBJC__
-#import <Foundation/Foundation.h>
-#endif /* __OBJC__ */

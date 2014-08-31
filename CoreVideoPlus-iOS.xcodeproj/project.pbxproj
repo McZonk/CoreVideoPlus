@@ -12,7 +12,7 @@
 		50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8147186C455300F0CD4D /* CVPOpenGLESTexture.m */; };
 		50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8149186C455300F0CD4D /* CVPOpenGLESTextureCache.m */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
-		50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m */; };
+		50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */ = {isa = PBXBuildFile; fileRef = 50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +42,7 @@
 		50BC814A186C455300F0CD4D /* NSError+CVPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CVPError.h"; sourceTree = "<group>"; };
 		50BC814B186C455300F0CD4D /* NSError+CVPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CVPError.m"; sourceTree = "<group>"; };
 		50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLPPixelformat+CVPPixelformat.h"; sourceTree = "<group>"; };
-		50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLPPixelformat+CVPPixelformat.m"; sourceTree = "<group>"; };
+		50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "GLPPixelformat+CVPPixelformat.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 				50BC814A186C455300F0CD4D /* NSError+CVPError.h */,
 				50BC814B186C455300F0CD4D /* NSError+CVPError.m */,
 				50BC8164186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.h */,
-				50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m */,
+				50BC8165186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c */,
 			);
 			name = CoreVideoPlus;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 				50BC814D186C455300F0CD4D /* CVPOpenGLESTextureCache.m in Sources */,
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
 				50BC814C186C455300F0CD4D /* CVPOpenGLESTexture.m in Sources */,
-				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.m in Sources */,
+				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

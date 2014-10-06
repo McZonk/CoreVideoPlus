@@ -127,7 +127,7 @@
 		50BC8115186C44E600F0CD4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = McZonk;
 			};
 			buildConfigurationList = 50BC8118186C44E600F0CD4D /* Build configuration list for PBXProject "CoreVideoPlus-OSX" */;
@@ -245,6 +245,7 @@
 		50BC8141186C44E600F0CD4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/CoreVideoPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreVideoPlus-Prefix.pch";
@@ -257,6 +258,7 @@
 		50BC8142186C44E600F0CD4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/CoreVideoPlus.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreVideoPlus-Prefix.pch";

@@ -30,6 +30,7 @@
 	if(self != nil)
 	{
 		texture = texture_;
+		CVOpenGLTextureRetain(texture);
 		
 		glpTextureSetDefaults(self.GLTarget, self.GLTexture);
 	}
@@ -38,10 +39,7 @@
 
 - (void)dealloc
 {
-	if(texture != NULL)
-	{
-		CFRelease(texture), texture = NULL;
-	}
+	CVOpenGLTextureRelease(texture);
 }
 
 - (GLenum)GLTarget

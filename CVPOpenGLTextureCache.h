@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 #import <CoreVideo/CoreVideo.h>
-
 #import <OpenGL/OpenGL.h>
 
 #import <OpenGLPlus/GLPPixelformat.h>

@@ -35,6 +35,10 @@
 			{
 				*error = [NSError errorWithDomain:CVPErrorDomain code:err userInfo:nil];
 			}
+			else
+			{
+				NSLog(@"%s:%d:ERROR: %d", __FUNCTION__, __LINE__, err);
+			}
 			
 			return nil;
 		}
@@ -44,10 +48,7 @@
 
 - (void)dealloc
 {
-	if(textureCache)
-	{
-		CFRelease(textureCache), textureCache = nil;
-	}
+	CVOpenGLTextureCacheRelease(textureCache);
 }
 
 - (CVPOpenGLTexture *)textureWithPixelBuffer:(CVPixelBufferRef)pixelBuffer error:(NSError **)error
@@ -60,17 +61,21 @@
 		{
 			*error = [NSError errorWithDomain:CVPErrorDomain code:err userInfo:nil];
 		}
-		
-		if(texture != NULL)
+		else
 		{
-			CFRelease(texture), texture = NULL;
+			NSLog(@"%s:%d:ERROR: %d", __FUNCTION__, __LINE__, err);
 		}
+		
+		CVOpenGLTextureRelease(texture);
 		
 		return nil;
 	}
 	
-	return [CVPOpenGLTexture textureWithCVOpenGLTexture:texture];
+	CVPOpenGLTexture *textureObject = [[CVPOpenGLTexture alloc] initWithCVOpenGLTexture:texture];
 	
+	CVOpenGLTextureRelease(texture);
+	
+	return textureObject;
 }
 
 - (void)flush

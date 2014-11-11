@@ -17,6 +17,7 @@
 
 #import <CoreVideoPlus/CVPOpenGLTexture.h>
 #import <CoreVideoPlus/CVPOpenGLTextureCache.h>
+#import <CoreVideoPlus/CVPOpenGLTextureCache+CMSampleBuffer.h>
 
 #endif  /* __OBJC__ */
 

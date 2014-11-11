@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5031B5021A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5011A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m */; };
+		5031B5051A1087610004E7F6 /* CVPOpenGLBufferPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */; };
+		5031B5081A1092770004E7F6 /* CVPOpenGLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */; };
 		50BC8121186C44E600F0CD4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC8120186C44E600F0CD4D /* Foundation.framework */; };
 		50BC8126186C44E600F0CD4D /* CoreVideoPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
@@ -29,6 +32,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5031B5001A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CVPOpenGLTextureCache+CMSampleBuffer.h"; sourceTree = "<group>"; };
+		5031B5011A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CVPOpenGLTextureCache+CMSampleBuffer.m"; sourceTree = "<group>"; };
+		5031B5031A1087610004E7F6 /* CVPOpenGLBufferPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLBufferPool.h; sourceTree = "<group>"; };
+		5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLBufferPool.m; sourceTree = "<group>"; };
+		5031B5061A1092770004E7F6 /* CVPOpenGLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLBuffer.h; sourceTree = "<group>"; };
+		5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLBuffer.m; sourceTree = "<group>"; };
 		50BC811D186C44E600F0CD4D /* libCoreVideoPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreVideoPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BC8120186C44E600F0CD4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreVideoPlus-Prefix.pch"; sourceTree = "<group>"; };
@@ -97,6 +106,12 @@
 				50D198F91963532C00B40610 /* CVPOpenGLTexture.m */,
 				50D198FB196354CC00B40610 /* CVPOpenGLTextureCache.h */,
 				50D198FC196354CC00B40610 /* CVPOpenGLTextureCache.m */,
+				5031B5001A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.h */,
+				5031B5011A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m */,
+				5031B5061A1092770004E7F6 /* CVPOpenGLBuffer.h */,
+				5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */,
+				5031B5031A1087610004E7F6 /* CVPOpenGLBufferPool.h */,
+				5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */,
 			);
 			name = CoreVideoPlus;
 			sourceTree = "<group>";
@@ -154,6 +169,9 @@
 			files = (
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
 				50D198FD196354CC00B40610 /* CVPOpenGLTextureCache.m in Sources */,
+				5031B5081A1092770004E7F6 /* CVPOpenGLBuffer.m in Sources */,
+				5031B5051A1087610004E7F6 /* CVPOpenGLBufferPool.m in Sources */,
+				5031B5021A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m in Sources */,
 				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */,
 				50D198FA1963532C00B40610 /* CVPOpenGLTexture.m in Sources */,
 			);

@@ -15,6 +15,8 @@
 
 #ifdef __OBJC__
 
+#import <CoreVideoPlus/CVPOpenGLBuffer.h>
+#import <CoreVideoPlus/CVPOpenGLBufferPool.h>
 #import <CoreVideoPlus/CVPOpenGLTexture.h>
 #import <CoreVideoPlus/CVPOpenGLTextureCache.h>
 #import <CoreVideoPlus/CVPOpenGLTextureCache+CMSampleBuffer.h>

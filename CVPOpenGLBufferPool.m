@@ -41,7 +41,7 @@ CV_EXPORT const CFStringRef kCVOpenGLBufferMaximumMipmapLevel AVAILABLE_MAC_OS_X
 		(__bridge NSString *)kCVOpenGLBufferHeight: @(height),
 		(__bridge NSString *)kCVOpenGLBufferTarget: @(target),
 		(__bridge NSString *)kCVOpenGLBufferInternalFormat: @(format),
-		(__bridge NSString *)kCVOpenGLBufferMaximumMipmapLevel: @(maximumMipmapLevel)
+		(__bridge NSString *)kCVOpenGLBufferMaximumMipmapLevel: @(maximumMipmapLevel),
 	};
 	
 	return [self initWithPoolAttributes:poolAttributes bufferAttributes:bufferAttributes error:error];

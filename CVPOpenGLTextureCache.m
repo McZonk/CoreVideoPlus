@@ -51,10 +51,10 @@
 	CVOpenGLTextureCacheRelease(textureCache);
 }
 
-- (CVPOpenGLTexture *)textureWithPixelBuffer:(CVPixelBufferRef)pixelBuffer error:(NSError **)error
+- (CVPOpenGLTexture *)textureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error
 {
 	CVOpenGLTextureRef texture = NULL;
-	CVReturn err = CVOpenGLTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pixelBuffer, NULL, &texture);
+	CVReturn err = CVOpenGLTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, imageBuffer, NULL, &texture);
 	if(err != kCVReturnSuccess)
 	{
 		if(error != nil)

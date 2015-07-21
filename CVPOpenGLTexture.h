@@ -10,4 +10,8 @@
 
 - (instancetype)initWithCVOpenGLTexture:(CVOpenGLTextureRef)texture;
 
+- (CVOpenGLTextureRef)CVOpenGLTexture NS_RETURNS_INNER_POINTER;
+
+- (void)getCleanTextureCoordinates:(GLfloat [8])textureCoordinates;
+
 @end

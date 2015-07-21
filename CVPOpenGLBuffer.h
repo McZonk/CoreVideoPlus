@@ -13,6 +13,6 @@
 - (BOOL)attachToFace:(GLenum)face level:(GLint)level virtualScreen:(GLint)virtualScreen context:(CGLContextObj)context;
 - (void)detach;
 
-- (CVImageBufferRef)CVOpenGLBuffer NS_RETURNS_INNER_POINTER;
+- (CVOpenGLBufferRef)CVOpenGLBuffer NS_RETURNS_INNER_POINTER;
 
 @end

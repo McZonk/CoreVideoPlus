@@ -68,6 +68,16 @@
 	glBindTexture(self.GLTarget, 0);
 }
 
+- (CVOpenGLTextureRef)CVOpenGLTexture NS_RETURNS_INNER_POINTER
+{
+	return texture;
+}
+
+- (void)getCleanTextureCoordinates:(GLfloat [8])textureCoordinates
+{
+	CVOpenGLTextureGetCleanTexCoords(texture, textureCoordinates+0, textureCoordinates+2, textureCoordinates+4, textureCoordinates+6);
+}
+
 - (NSString*)description
 {
 	return [NSString stringWithFormat:@"<%@: %p | %@>", [self class], self, texture];

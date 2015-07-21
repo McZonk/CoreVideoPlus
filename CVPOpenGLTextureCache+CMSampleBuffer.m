@@ -5,14 +5,14 @@
 
 - (CVPOpenGLTexture *)textureWithSampleBuffer:(CMSampleBufferRef)sampleBuffer error:(NSError **)error
 {
-	CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-	if(pixelBuffer == nil)
+	CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+	if(imageBuffer == nil)
 	{
 		// TODO:
 		return nil;
 	}
 	
-	return [self textureWithPixelBuffer:pixelBuffer error:error];
+	return [self textureWithImageBuffer:imageBuffer error:error];
 }
 
 @end

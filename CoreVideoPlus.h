@@ -8,7 +8,11 @@
 
 #import <CoreVideoPlus/NSError+CVPError.h>
 
+#import <CoreVideoPlus/CVPPixelBuffer.h>
+#import <CoreVideoPlus/CVPPixelBufferPool.h>
+
 #endif
+
 
 
 #if defined(TARGET_OS_MAC) && (TARGET_OS_MAC > 0)

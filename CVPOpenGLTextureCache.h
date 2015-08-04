@@ -14,6 +14,8 @@
 
 - (instancetype)initWithContext:(CGLContextObj)context error:(NSError **)error;
 
+- (CVOpenGLTextureRef)createTextureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error;
+
 - (CVPOpenGLTexture *)textureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error;
 
 - (void)flush;

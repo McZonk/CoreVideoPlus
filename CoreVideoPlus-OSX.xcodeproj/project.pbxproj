@@ -10,6 +10,8 @@
 		5031B5021A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5011A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m */; };
 		5031B5051A1087610004E7F6 /* CVPOpenGLBufferPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */; };
 		5031B5081A1092770004E7F6 /* CVPOpenGLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */; };
+		50B0E2E51B70073900371BB7 /* CVPPixelBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B0E2E41B70073900371BB7 /* CVPPixelBuffer.m */; };
+		50B0E2E81B70074600371BB7 /* CVPPixelBufferPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B0E2E71B70074600371BB7 /* CVPPixelBufferPool.m */; };
 		50BC8121186C44E600F0CD4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC8120186C44E600F0CD4D /* Foundation.framework */; };
 		50BC8126186C44E600F0CD4D /* CoreVideoPlus.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 50BC8125186C44E600F0CD4D /* CoreVideoPlus.h */; };
 		50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 50BC814B186C455300F0CD4D /* NSError+CVPError.m */; };
@@ -38,6 +40,10 @@
 		5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLBufferPool.m; sourceTree = "<group>"; };
 		5031B5061A1092770004E7F6 /* CVPOpenGLBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPOpenGLBuffer.h; sourceTree = "<group>"; };
 		5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPOpenGLBuffer.m; sourceTree = "<group>"; };
+		50B0E2E31B70073900371BB7 /* CVPPixelBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPPixelBuffer.h; sourceTree = "<group>"; };
+		50B0E2E41B70073900371BB7 /* CVPPixelBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPPixelBuffer.m; sourceTree = "<group>"; };
+		50B0E2E61B70074600371BB7 /* CVPPixelBufferPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPPixelBufferPool.h; sourceTree = "<group>"; };
+		50B0E2E71B70074600371BB7 /* CVPPixelBufferPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVPPixelBufferPool.m; sourceTree = "<group>"; };
 		50BC811D186C44E600F0CD4D /* libCoreVideoPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreVideoPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BC8120186C44E600F0CD4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50BC8124186C44E600F0CD4D /* CoreVideoPlus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreVideoPlus-Prefix.pch"; sourceTree = "<group>"; };
@@ -112,6 +118,10 @@
 				5031B5071A1092770004E7F6 /* CVPOpenGLBuffer.m */,
 				5031B5031A1087610004E7F6 /* CVPOpenGLBufferPool.h */,
 				5031B5041A1087610004E7F6 /* CVPOpenGLBufferPool.m */,
+				50B0E2E31B70073900371BB7 /* CVPPixelBuffer.h */,
+				50B0E2E41B70073900371BB7 /* CVPPixelBuffer.m */,
+				50B0E2E61B70074600371BB7 /* CVPPixelBufferPool.h */,
+				50B0E2E71B70074600371BB7 /* CVPPixelBufferPool.m */,
 			);
 			name = CoreVideoPlus;
 			sourceTree = "<group>";
@@ -167,11 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B0E2E51B70073900371BB7 /* CVPPixelBuffer.m in Sources */,
 				50BC814E186C455300F0CD4D /* NSError+CVPError.m in Sources */,
 				50D198FD196354CC00B40610 /* CVPOpenGLTextureCache.m in Sources */,
 				5031B5081A1092770004E7F6 /* CVPOpenGLBuffer.m in Sources */,
 				5031B5051A1087610004E7F6 /* CVPOpenGLBufferPool.m in Sources */,
 				5031B5021A10844D0004E7F6 /* CVPOpenGLTextureCache+CMSampleBuffer.m in Sources */,
+				50B0E2E81B70074600371BB7 /* CVPPixelBufferPool.m in Sources */,
 				50BC8166186C47A900F0CD4D /* GLPPixelformat+CVPPixelformat.c in Sources */,
 				50D198FA1963532C00B40610 /* CVPOpenGLTexture.m in Sources */,
 			);

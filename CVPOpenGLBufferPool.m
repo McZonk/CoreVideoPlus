@@ -16,18 +16,8 @@
 
 @end
 
-#if 0
-
-CV_EXPORT const CFStringRef kCVOpenGLBufferWidth AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER;
-CV_EXPORT const CFStringRef kCVOpenGLBufferHeight AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER;
-CV_EXPORT const CFStringRef kCVOpenGLBufferTarget AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER;
-CV_EXPORT const CFStringRef kCVOpenGLBufferInternalFormat AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER;
-CV_EXPORT const CFStringRef kCVOpenGLBufferMaximumMipmapLevel AVAILABLE_MAC_OS_X_VERSION_10_4_AND_LATER;
-
-#endif
 
 @implementation CVPOpenGLBufferPool
-
 
 - (instancetype)initWithMinimumBufferCount:(NSUInteger)minimumBufferCount maximumBufferAge:(NSTimeInterval)maximumBufferAge width:(int32_t)width height:(int32_t)height target:(GLenum)target format:(GLenum)format maximumMipmapLevel:(GLint)maximumMipmapLevel error:(NSError **)error
 {
@@ -57,7 +47,7 @@ CV_EXPORT const CFStringRef kCVOpenGLBufferMaximumMipmapLevel AVAILABLE_MAC_OS_X
 		{
 			if(error != nil)
 			{
-				*error = [NSError errorWithDomain:CVPErrorDomain code:err userInfo:nil];
+				*error = [NSError errorWithDomain:NSOSStatusErrorDomain code:err userInfo:nil];
 			}
 			else
 			{
@@ -73,7 +63,7 @@ CV_EXPORT const CFStringRef kCVOpenGLBufferMaximumMipmapLevel AVAILABLE_MAC_OS_X
 	CVOpenGLBufferPoolRelease(bufferPool);
 }
 
-- (CVPOpenGLBuffer *)bufferWithError:(NSError **)error
+- (CVOpenGLBufferRef)createBufferWithError:(NSError **)error
 {
 	CVOpenGLBufferRef buffer = NULL;
 	CVReturn err = CVOpenGLBufferPoolCreateOpenGLBuffer(NULL, bufferPool, &buffer);
@@ -81,12 +71,22 @@ CV_EXPORT const CFStringRef kCVOpenGLBufferMaximumMipmapLevel AVAILABLE_MAC_OS_X
 	{
 		if(error != nil)
 		{
-			*error = [NSError errorWithDomain:CVPErrorDomain code:err userInfo:nil];
+			*error = [NSError errorWithDomain:NSOSStatusErrorDomain code:err userInfo:nil];
 		}
 		else
 		{
 			NSLog(@"%s:%d:ERROR: %d", __FUNCTION__, __LINE__, err);
 		}
+	}
+	return buffer;
+}
+
+- (CVPOpenGLBuffer *)bufferWithError:(NSError **)error
+{
+	CVOpenGLBufferRef buffer = [self createBufferWithError:error];
+	if (buffer == NULL)
+	{
+		return NULL;
 	}
 	
 	CVPOpenGLBuffer *bufferObject = [[CVPOpenGLBuffer alloc] initWithCVOpenGLBuffer:buffer];

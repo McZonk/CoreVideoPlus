@@ -51,7 +51,7 @@
 	CVOpenGLTextureCacheRelease(textureCache);
 }
 
-- (CVPOpenGLTexture *)textureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error
+- (CVOpenGLTextureRef)createTextureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error
 {
 	CVOpenGLTextureRef texture = NULL;
 	CVReturn err = CVOpenGLTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, imageBuffer, NULL, &texture);
@@ -65,9 +65,15 @@
 		{
 			NSLog(@"%s:%d:ERROR: %d", __FUNCTION__, __LINE__, err);
 		}
-		
-		CVOpenGLTextureRelease(texture);
-		
+	}
+	return texture;
+}
+
+- (CVPOpenGLTexture *)textureWithImageBuffer:(CVImageBufferRef)imageBuffer error:(NSError **)error
+{
+	CVOpenGLTextureRef texture = [self createTextureWithImageBuffer:imageBuffer error:error];
+	if (texture == NULL)
+	{
 		return nil;
 	}
 	

@@ -48,3 +48,16 @@
 }
 
 @end
+
+#if COREVIDEO_SUPPORTS_IOSURFACE
+
+@implementation CVPPixelBuffer (IOSurface)
+
+- (IOSurfaceRef)IOSurface
+{
+	return CVPixelBufferGetIOSurface(buffer);
+}
+
+@end
+
+#endif

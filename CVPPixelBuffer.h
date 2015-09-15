@@ -12,3 +12,14 @@
 - (CVPixelBufferRef)CVPixelBuffer NS_RETURNS_INNER_POINTER;
 
 @end
+
+
+#if COREVIDEO_SUPPORTS_IOSURFACE
+
+@interface CVPPixelBuffer (IOSurface)
+
+- (IOSurfaceRef)IOSurface NS_RETURNS_INNER_POINTER;
+
+@end
+
+#endif
